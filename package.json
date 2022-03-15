@@ -1,18 +1,26 @@
 {
-  "name": "eslint-config-dodicandra",
+  "name": "@dodicandra/eslint-config-rn",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": false,
   "scripts": {},
   "author": "Dodi candra <cekiddot@gmail.com> (https://github.com/dodicandra)",
   "license": "MIT",
   "dependencies": {
-    "@react-native-community/eslint-config": "2.0.0"
+    "@react-native-community/eslint-config": "2.0.0",
+    "@typescript-eslint/parser": "4.28.3",
+    "eslint-config-prettier": "^8.5.0"
   },
   "peerDependencies": {
-    "eslint": "<=7 && >=6"
+    "eslint": ">=6"
   },
   "devDependencies": {
-    "eslint": "<=7 && >=6"
+    "eslint": "7.14.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.2"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
   }
 }
