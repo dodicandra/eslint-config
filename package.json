@@ -1,0 +1,18 @@
+{
+  "name": "eslint-config-dodicandra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Dodi candra <cekiddot@gmail.com> (https://github.com/dodicandra)",
+  "license": "MIT",
+  "dependencies": {
+    "@react-native-community/eslint-config": "2.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "<=7 && >=6"
+  },
+  "devDependencies": {
+    "eslint": "<=7 && >=6"
+  }
+}
