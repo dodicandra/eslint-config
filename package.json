@@ -1,6 +1,6 @@
 {
   "name": "@dodicandra/eslint-config-rn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "private": false,
@@ -10,7 +10,8 @@
   "dependencies": {
     "@react-native-community/eslint-config": "2.0.0",
     "@typescript-eslint/parser": "4.28.3",
-    "eslint-config-prettier": "^8.5.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "3.1.2"
   },
   "peerDependencies": {
     "eslint": ">=6"
