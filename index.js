@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs');
 const path = require('path');
 
@@ -9,7 +10,7 @@ const tsConfig = fs.existsSync('tsconfig.json')
 
 module.exports = {
   plugins: ['@typescript-eslint'],
-  extends: ['@react-native-community'],
+  extends: ['@react-native-community', 'plugin:@typescript-eslint/recommended', 'eslint:recommended'],
   settings: { react: { version: 'detect' } },
   parser: '@typescript-eslint/parser',
   overrides: [
@@ -29,7 +30,8 @@ module.exports = {
       rules: {
         'no-undef': 0,
         '@typescript-eslint/no-non-null-asserted-optional-chain': 0,
-        '@typescript-eslint/no-unused-vars': ['warn'],
+        '@typescript-eslint/no-unused-vars': 0,
+        '@typescript-eslint/no-unused-vars-experimental': 2,
         '@typescript-eslint/ban-types': 0,
         '@typescript-eslint/ban-ts-comment': 0,
         '@typescript-eslint/no-explicit-any': 0,
@@ -43,6 +45,20 @@ module.exports = {
     }
   ],
   rules: {
+    // react
+    'react/destructuring-assignment': 0,
+    'react/require-render-return': 2,
+    'react/jsx-key': 2,
+    'react/jsx-handler-names': 0,
+    'react/sort-comp': 0,
+    'react/react-in-jsx-scope': 0,
+    'react-hooks/exhaustive-deps': 'warn',
+    // react-native
+    'react-native/split-platform-components': 0,
+    'react-native/no-inline-styles': 0,
+    'react-native/no-color-literals': 0,
+    'react-native/no-unused-styles': 1,
+    // regular
     'no-multiple-empty-lines': 2,
     'no-extra-boolean-cast': 0,
     'object-shorthand': [
@@ -55,20 +71,6 @@ module.exports = {
     'no-shadow': 0,
     curly: 0,
     'arrow-parens': 0,
-    // react
-    'react/destructuring-assignment': 0,
-    'react/require-render-return': 2,
-    'react/jsx-key': 2,
-    'react/jsx-handler-names': 0,
-    'react/sort-comp': 0,
-    'react/react-in-jsx-scope': 0,
-    // react-native
-    'react-hooks/exhaustive-deps': 'warn',
-    'react-native/split-platform-components': 0,
-    'react-native/no-inline-styles': 0,
-    'react-native/no-color-literals': 0,
-    'react-native/no-unused-styles': 1,
-    // regular
     'no-undef': 2,
     'no-console': 1,
     semi: 1,
