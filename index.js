@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs');
 const path = require('path');
 
@@ -30,8 +29,8 @@ module.exports = {
       rules: {
         'no-undef': 0,
         '@typescript-eslint/no-non-null-asserted-optional-chain': 0,
-        '@typescript-eslint/no-unused-vars': 0,
-        '@typescript-eslint/no-unused-vars-experimental': 2,
+        '@typescript-eslint/no-unused-vars': 2,
+        // '@typescript-eslint/no-unused-vars-experimental': 2,
         '@typescript-eslint/ban-types': 0,
         '@typescript-eslint/ban-ts-comment': 0,
         '@typescript-eslint/no-explicit-any': 0,
@@ -40,11 +39,14 @@ module.exports = {
         '@typescript-eslint/no-empty-interface': 0,
         '@typescript-eslint/no-empty-function': 0,
         '@typescript-eslint/no-namespace': 0,
-        '@typescript-eslint/explicit-module-boundary-types': 0
+        '@typescript-eslint/explicit-module-boundary-types': 0,
+        '@typescript-eslint/no-extra-non-null-assertion': 'off',
+        '@typescript-eslint/no-unnecessary-type-constraint': 'off'
       }
     }
   ],
   rules: {
+    '@typescript-eslint/no-var-requires': 'off',
     // react
     'react/destructuring-assignment': 0,
     'react/require-render-return': 2,
@@ -59,6 +61,7 @@ module.exports = {
     'react-native/no-color-literals': 0,
     'react-native/no-unused-styles': 1,
     // regular
+    'no-useless-catch': 'off',
     'no-multiple-empty-lines': 2,
     'no-extra-boolean-cast': 0,
     'object-shorthand': [

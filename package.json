@@ -1,6 +1,6 @@
 {
   "name": "@dodicandra/eslint-config-rn",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "private": false,
@@ -8,17 +8,15 @@
   "author": "Dodi candra <cekiddot@gmail.com> (https://github.com/dodicandra)",
   "license": "MIT",
   "dependencies": {
-    "@react-native-community/eslint-config": "2.0.0",
-    "@typescript-eslint/parser": "4.28.3",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "3.1.2"
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "5.7.0",
+    "@typescript-eslint/parser": "5.7.0"
   },
   "peerDependencies": {
     "eslint": ">=6"
   },
   "devDependencies": {
     "eslint": "7.14.0",
-    "prettier": "^2.5.1",
     "typescript": "^4.6.2"
   },
   "eslintConfig": {
